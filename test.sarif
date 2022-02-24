@@ -1,0 +1,707 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck",
+                    "organization": "Synopsys",
+                    "version": "1.0.7",
+                    "rules": [
+                        {
+                            "id": "jetty-server",
+                            "shortDescription": {
+                                "text": "The direct dependency jetty-server/7.1.0.v20100505 has 1 vulnerabilities (max score 9.8) and 1 vulnerabilities in child dependencies (max score 9.8)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency jetty-server/7.1.0.v20100505 has 1 vulnerabilities (max score 9.8) and 1 vulnerabilities in child dependencies (max score 9.8).\n\nList of direct vulnerabilities:\nCVE-2017-7657\n\nList of indirect vulnerabilities:\nCVE-2017-7657 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency jetty-server/7.1.0.v20100505 has 1 vulnerabilities (max score 9.8) and 1 vulnerabilities in child dependencies (max score 9.8).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | jetty-server/7.1.0.v20100505 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2017-7657/overview\" target=\"_blank\">CVE-2017-7657</a> | 9.8 | Vulnerabilities | In Eclipse Jetty, versions 9.2.x and older, 9.3.x (all configurations), and 9.4.x (non-default configuration with RFC2616 compliance enabled), transfer-encoding chunks are handled poorly. The chun ... | Yes |\n| jetty-server/7.1.0.v20100505 | jetty-continuation/7.1.0.v20100505 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2017-7657/overview\" target=\"_blank\">CVE-2017-7657</a> | 9.8 | Vulnerabilities | In Eclipse Jetty, versions 9.2.x and older, 9.3.x (all configurations), and 9.4.x (non-default configuration with RFC2616 compliance enabled), transfer-encoding chunks are handled poorly. The chun ... | Yes |\n\n\nRecommended to upgrade to version 11.0.8.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "9.8"
+                            }
+                        },
+                        {
+                            "id": "spring-context",
+                            "shortDescription": {
+                                "text": "The direct dependency spring-context/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency spring-context/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8).\n\nList of direct vulnerabilities:\nBDSA-2018-0994\n\nList of indirect vulnerabilities:\nBDSA-2018-0994 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency spring-context/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | spring-context/4.3.5.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-0994/overview\" target=\"_blank\">BDSA-2018-0994</a> | 8.8 | Vulnerabilities | Spring Framework is vulnerable to remote code execution (*RCE*) due to lack of proper validation of user-supplied input. Potential attackers can leverage this flaw to run arbitrary code on the tar ... | Yes |\n| spring-context/4.3.5.RELEASE | spring-beans/4.3.5.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-0994/overview\" target=\"_blank\">BDSA-2018-0994</a> | 8.8 | Vulnerabilities | Spring Framework is vulnerable to remote code execution (*RCE*) due to lack of proper validation of user-supplied input. Potential attackers can leverage this flaw to run arbitrary code on the tar ... | Yes |\n\n\nRecommended to upgrade to version 5.3.16.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "hibernate-core",
+                            "shortDescription": {
+                                "text": "The direct dependency hibernate-core/5.0.10.Final has 1 vulnerabilities (max score 7.4) and 1 vulnerabilities in child dependencies (max score 8.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency hibernate-core/5.0.10.Final has 1 vulnerabilities (max score 7.4) and 1 vulnerabilities in child dependencies (max score 8.5).\n\nList of direct vulnerabilities:\nCVE-2020-25638\n\nList of indirect vulnerabilities:\nBDSA-2019-4386 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency hibernate-core/5.0.10.Final has 1 vulnerabilities (max score 7.4) and 1 vulnerabilities in child dependencies (max score 8.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| hibernate-core/5.0.10.Final | dom4j/1.6.1 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-4386/overview\" target=\"_blank\">BDSA-2019-4386</a> | 8.5 | Vulnerabilities | Dom4j is vulnerable to XML external entities (XXE) attacks.  This is due to the XML parser expanding XML entities by default.  A remote attacker that is able to supply input to Dom4j may be able t ... | Yes |\n| -/- | hibernate-core/5.0.10.Final | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2020-25638/overview\" target=\"_blank\">CVE-2020-25638</a> | 7.4 | Vulnerabilities | A flaw was found in hibernate-core in versions prior to and including 5.4.23.Final. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is  ... | Yes |\n\n\nRecommended to upgrade to version 5.6.5.Final.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.4"
+                            }
+                        },
+                        {
+                            "id": "httpclient",
+                            "shortDescription": {
+                                "text": "The direct dependency httpclient/4.4.1 has 1 vulnerabilities (max score 5.7)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency httpclient/4.4.1 has 1 vulnerabilities (max score 5.7).\n\nList of direct vulnerabilities:\nBDSA-2020-2701"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency httpclient/4.4.1 has 1 vulnerabilities (max score 5.7).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | httpclient/4.4.1 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-2701/overview\" target=\"_blank\">BDSA-2020-2701</a> | 5.7 | Vulnerabilities | Apache HttpClient is vulnerable to the disclosure and modification of data due to the mishandling of malformed URIs. An attacker could pass a maliciously crafted request to a vulnerable applicatio ... | Yes |\n\n\nRecommended to upgrade to version 4.5.13.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "5.7"
+                            }
+                        },
+                        {
+                            "id": "spring-security-core",
+                            "shortDescription": {
+                                "text": "The direct dependency spring-security-core/4.1.4.RELEASE has 3 vulnerabilities (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency spring-security-core/4.1.4.RELEASE has 3 vulnerabilities (max score 6.5).\n\nList of direct vulnerabilities:\nCVE-2020-5408,BDSA-2018-0546,BDSA-2021-0417"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency spring-security-core/4.1.4.RELEASE has 3 vulnerabilities (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | spring-security-core/4.1.4.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2020-5408/overview\" target=\"_blank\">CVE-2020-5408</a> | 6.5 | Vulnerabilities | Spring Security versions 5.3.x prior to 5.3.2, 5.2.x prior to 5.2.4, 5.1.x prior to 5.1.10, 5.0.x prior to 5.0.16 and 4.2.x prior to 4.2.16 use a fixed null initialization vector with CBC Mode in  ... | Yes |\n| -/- | spring-security-core/4.1.4.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-0546/overview\" target=\"_blank\">BDSA-2018-0546</a> | 6.5 | Vulnerabilities | Spring Security is vulnerable to a remote attacker supplying path name components with different character encodings that bypass the security restraints of Spring MVC static resource URLs. | Yes |\n| -/- | spring-security-core/4.1.4.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0417/overview\" target=\"_blank\">BDSA-2021-0417</a> | 6.5 | Vulnerabilities | Spring Security is vulnerable to privilege escalation due to a failure to correctly save security context information. An attacker who is allowed to use elevated privileges in a small portion of a ... | Yes |\n\n\nRecommended to upgrade to version 4.2.20.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "6.5"
+                            }
+                        },
+                        {
+                            "id": "jersey-client",
+                            "shortDescription": {
+                                "text": "The direct dependency jersey-client/1.13 has 1 vulnerabilities (max score 4.7) and 1 vulnerabilities in child dependencies (max score 4.7)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency jersey-client/1.13 has 1 vulnerabilities (max score 4.7) and 1 vulnerabilities in child dependencies (max score 4.7).\n\nList of direct vulnerabilities:\nBDSA-2015-0789\n\nList of indirect vulnerabilities:\nBDSA-2015-0789 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency jersey-client/1.13 has 1 vulnerabilities (max score 4.7) and 1 vulnerabilities in child dependencies (max score 4.7).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | jersey-client/1.13 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2015-0789/overview\" target=\"_blank\">BDSA-2015-0789</a> | 4.7 | Vulnerabilities | Jersey is vulnerable to XML external entity attacks due to the unrestricted implementation of a SAX parser. A remote attacker could obtain the contents of files on the underlying operating system  ... | Yes |\n| jersey-client/1.13 | jersey-core/1.13 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2015-0789/overview\" target=\"_blank\">BDSA-2015-0789</a> | 4.7 | Vulnerabilities | Jersey is vulnerable to XML external entity attacks due to the unrestricted implementation of a SAX parser. A remote attacker could obtain the contents of files on the underlying operating system  ... | Yes |\n\n\nRecommended to upgrade to version 1.19.4.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "4.7"
+                            }
+                        },
+                        {
+                            "id": "struts2-core",
+                            "shortDescription": {
+                                "text": "The direct dependency struts2-core/2.5.14.1 has 3 vulnerabilities (max score 9.1) and 1 vulnerabilities in child dependencies (max score 4.8)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency struts2-core/2.5.14.1 has 3 vulnerabilities (max score 9.1) and 1 vulnerabilities in child dependencies (max score 4.8).\n\nList of direct vulnerabilities:\nBDSA-2020-2097,BDSA-2018-2905,BDSA-2020-3670\n\nList of indirect vulnerabilities:\nBDSA-2021-0922 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency struts2-core/2.5.14.1 has 3 vulnerabilities (max score 9.1) and 1 vulnerabilities in child dependencies (max score 4.8).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | struts2-core/2.5.14.1 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-2097/overview\" target=\"_blank\">BDSA-2020-2097</a> | 9.1 | Vulnerabilities | Apache Struts2 is vulnerable to RCE through forced double evaluation of powerful OGNL expression statements under certain circumstances. A remote attacker could leverage this to cause remote code  ... | Yes |\n| -/- | struts2-core/2.5.14.1 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-2905/overview\" target=\"_blank\">BDSA-2018-2905</a> | 9.1 | Vulnerabilities | Apache Struts is vulnerable to remote code execution (RCE).  This vulnerability only manifests in certain configuration environments.  This vulnerability allows a remote attacker to execute arbitr ... | Yes |\n| -/- | struts2-core/2.5.14.1 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3670/overview\" target=\"_blank\">BDSA-2020-3670</a> | 9.1 | Vulnerabilities | Apache Struts 2 is vulnerable to remote code execution (RCE) through forced OGNL expression statements under certain circumstances. A remote attacker could leverage this to cause RCE in the contex ... | Yes |\n| struts2-core/2.5.14.1 | commons-io/2.5 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0922/overview\" target=\"_blank\">BDSA-2021-0922</a> | 4.8 | Vulnerabilities | Apache Commons IO contains a path traversal vulnerability. Successfully exploiting this could allow an attacker access to files they do not have permission to view. | Yes |\n\n\nRecommended to upgrade to version 2.5.29.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "9.1"
+                            }
+                        },
+                        {
+                            "id": "poi",
+                            "shortDescription": {
+                                "text": "The direct dependency poi/3.16 has 1 vulnerabilities (max score 6.5) and 1 vulnerabilities in child dependencies (max score 4.6)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency poi/3.16 has 1 vulnerabilities (max score 6.5) and 1 vulnerabilities in child dependencies (max score 4.6).\n\nList of direct vulnerabilities:\nBDSA-2019-3341\n\nList of indirect vulnerabilities:\nBDSA-2012-0001 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency poi/3.16 has 1 vulnerabilities (max score 6.5) and 1 vulnerabilities in child dependencies (max score 4.6).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | poi/3.16 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3341/overview\" target=\"_blank\">BDSA-2019-3341</a> | 6.5 | Vulnerabilities | Apache is vulnerable to XML External Entity (XXE) injection due to the unsafe processing of client-provided input documents. An attacker could read files from the local file system, or from intern ... | Yes |\n| poi/3.16 | commons-codec/1.10 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2012-0001/overview\" target=\"_blank\">BDSA-2012-0001</a> | 4.6 | Vulnerabilities | Apache Commons contains a flaw that is due to the Base32 codec decoding  invalid strings instead of rejecting them. This may allow a remote attacker to tunnel  additional information via a base 32 ... | Yes |\n\n\nRecommended to upgrade to version REL_5_0_0.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "6.5"
+                            }
+                        },
+                        {
+                            "id": "itextpdf",
+                            "shortDescription": {
+                                "text": "The direct dependency itextpdf/5.3.2 has 1 vulnerabilities (max score 8.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency itextpdf/5.3.2 has 1 vulnerabilities (max score 8.5).\n\nList of direct vulnerabilities:\nBDSA-2017-4082"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency itextpdf/5.3.2 has 1 vulnerabilities (max score 8.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | itextpdf/5.3.2 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2017-4082/overview\" target=\"_blank\">BDSA-2017-4082</a> | 8.5 | Vulnerabilities | iText is vulnerable to XML External Entities (XXE) attacks due to how the XML parsers in use are not configured to disable external entities.  An attacker could abuse this issue by submitting a cr ... | Yes |\n\n\nRecommended to upgrade to version 5.5.13.2.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.5"
+                            }
+                        },
+                        {
+                            "id": "spring-webmvc",
+                            "shortDescription": {
+                                "text": "The direct dependency spring-webmvc/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency spring-webmvc/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8).\n\nList of direct vulnerabilities:\nBDSA-2018-0994\n\nList of indirect vulnerabilities:\nBDSA-2018-0994 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency spring-webmvc/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | spring-webmvc/4.3.5.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-0994/overview\" target=\"_blank\">BDSA-2018-0994</a> | 8.8 | Vulnerabilities | Spring Framework is vulnerable to remote code execution (*RCE*) due to lack of proper validation of user-supplied input. Potential attackers can leverage this flaw to run arbitrary code on the tar ... | Yes |\n| spring-webmvc/4.3.5.RELEASE | spring-web/4.3.5.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-0994/overview\" target=\"_blank\">BDSA-2018-0994</a> | 8.8 | Vulnerabilities | Spring Framework is vulnerable to remote code execution (*RCE*) due to lack of proper validation of user-supplied input. Potential attackers can leverage this flaw to run arbitrary code on the tar ... | Yes |\n\n\nRecommended to upgrade to version 5.3.15.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "jackson-mapper-asl",
+                            "shortDescription": {
+                                "text": "The direct dependency jackson-mapper-asl/1.9.10 has 1 vulnerabilities (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency jackson-mapper-asl/1.9.10 has 1 vulnerabilities (max score 6.5).\n\nList of direct vulnerabilities:\nBDSA-2019-4644"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency jackson-mapper-asl/1.9.10 has 1 vulnerabilities (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | jackson-mapper-asl/1.9.10 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-4644/overview\" target=\"_blank\">BDSA-2019-4644</a> | 6.5 | Vulnerabilities | It was discovered that jackson-mapper-asl  is vulnerable to XML External Entity (XXE) attacks due to the unsafe implementation of parsing functionality. An attacker could exploit this vulnerabilit ... | Yes |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "6.5"
+                            }
+                        },
+                        {
+                            "id": "guava",
+                            "shortDescription": {
+                                "text": "The direct dependency guava/11.0.2 has 1 vulnerabilities (max score 6.5)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency guava/11.0.2 has 1 vulnerabilities (max score 6.5).\n\nList of direct vulnerabilities:\nBDSA-2018-1358"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency guava/11.0.2 has 1 vulnerabilities (max score 6.5).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | guava/11.0.2 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-1358/overview\" target=\"_blank\">BDSA-2018-1358</a> | 6.5 | Vulnerabilities | Servers that depend on the Guava libraries are vulnerable to denial-of-service (DoS) conditions because certain classes allocate memory without proper checks. Potential attackers can leverage this ... | Yes |\n\n\nRecommended to upgrade to version 31.0.1-jre.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "6.5"
+                            }
+                        },
+                        {
+                            "id": "hibernate-validator",
+                            "shortDescription": {
+                                "text": "The direct dependency hibernate-validator/5.2.4.Final has 1 vulnerabilities (max score 7.0)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency hibernate-validator/5.2.4.Final has 1 vulnerabilities (max score 7.0).\n\nList of direct vulnerabilities:\nCVE-2017-7536"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency hibernate-validator/5.2.4.Final has 1 vulnerabilities (max score 7.0).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | hibernate-validator/5.2.4.Final | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/CVE-2017-7536/overview\" target=\"_blank\">CVE-2017-7536</a> | 7.0 | Vulnerabilities | In Hibernate Validator 5.2.x before 5.2.5 final, 5.3.x, and 5.4.x, it was found that when the security manager's reflective permissions, which allows it to access the private members of the class, ... | Yes |\n\n\nRecommended to upgrade to version 7.0.2.Final.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.0"
+                            }
+                        },
+                        {
+                            "id": "log4j",
+                            "shortDescription": {
+                                "text": "The direct dependency log4j/1.2.15 has 1 vulnerabilities (max score 9.4)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency log4j/1.2.15 has 1 vulnerabilities (max score 9.4).\n\nList of direct vulnerabilities:\nBDSA-2017-0180"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency log4j/1.2.15 has 1 vulnerabilities (max score 9.4).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | log4j/1.2.15 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2017-0180/overview\" target=\"_blank\">BDSA-2017-0180</a> | 9.4 | Vulnerabilities | A deserialization flaw in log4j can lead to remote arbitrary code execution. | Yes |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "9.4"
+                            }
+                        },
+                        {
+                            "id": "junit",
+                            "shortDescription": {
+                                "text": "The direct dependency junit/4.7 has 1 vulnerabilities (max score 4.0)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency junit/4.7 has 1 vulnerabilities (max score 4.0).\n\nList of direct vulnerabilities:\nBDSA-2020-2739"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency junit/4.7 has 1 vulnerabilities (max score 4.0).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | junit/4.7 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-2739/overview\" target=\"_blank\">BDSA-2020-2739</a> | 4.0 | Vulnerabilities | JUnit4 is vulnerable to information disclosure via the `TemporaryFolder` directory. A local user could exploit this vulnerability in order to read files and directories stored within this directory. | Yes |\n\n\nRecommended to upgrade to version 4.13.2.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "4.0"
+                            }
+                        },
+                        {
+                            "id": "spring-core",
+                            "shortDescription": {
+                                "text": "The direct dependency spring-core/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency spring-core/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8).\n\nList of direct vulnerabilities:\nBDSA-2018-0994"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency spring-core/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Direct Dep Changed |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | spring-core/4.3.5.RELEASE | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-0994/overview\" target=\"_blank\">BDSA-2018-0994</a> | 8.8 | Vulnerabilities | Spring Framework is vulnerable to remote code execution (*RCE*) due to lack of proper validation of user-supplied input. Potential attackers can leverage this flaw to run arbitrary code on the tar ... | Yes |\n\n\nRecommended to upgrade to version 5.3.16.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "jetty-server",
+                    "message": {
+                        "text": "The direct dependency jetty-server/7.1.0.v20100505 has 1 vulnerabilities (max score 9.8) and 1 vulnerabilities in child dependencies (max score 9.8)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 75
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "spring-context",
+                    "message": {
+                        "text": "The direct dependency spring-context/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": ""
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "hibernate-core",
+                    "message": {
+                        "text": "The direct dependency hibernate-core/5.0.10.Final has 1 vulnerabilities (max score 7.4) and 1 vulnerabilities in child dependencies (max score 8.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 237
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "httpclient",
+                    "message": {
+                        "text": "The direct dependency httpclient/4.4.1 has 1 vulnerabilities (max score 5.7)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 145
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "spring-security-core",
+                    "message": {
+                        "text": "The direct dependency spring-security-core/4.1.4.RELEASE has 3 vulnerabilities (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 114
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "jersey-client",
+                    "message": {
+                        "text": "The direct dependency jersey-client/1.13 has 1 vulnerabilities (max score 4.7) and 1 vulnerabilities in child dependencies (max score 4.7)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 255
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "struts2-core",
+                    "message": {
+                        "text": "The direct dependency struts2-core/2.5.14.1 has 3 vulnerabilities (max score 9.1) and 1 vulnerabilities in child dependencies (max score 4.8)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 69
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "poi",
+                    "message": {
+                        "text": "The direct dependency poi/3.16 has 1 vulnerabilities (max score 6.5) and 1 vulnerabilities in child dependencies (max score 4.6)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 55
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "itextpdf",
+                    "message": {
+                        "text": "The direct dependency itextpdf/5.3.2 has 1 vulnerabilities (max score 8.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 261
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "spring-webmvc",
+                    "message": {
+                        "text": "The direct dependency spring-webmvc/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8) and 1 vulnerabilities in child dependencies (max score 8.8)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": ""
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "jackson-mapper-asl",
+                    "message": {
+                        "text": "The direct dependency jackson-mapper-asl/1.9.10 has 1 vulnerabilities (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 126
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "guava",
+                    "message": {
+                        "text": "The direct dependency guava/11.0.2 has 1 vulnerabilities (max score 6.5)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 138
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "hibernate-validator",
+                    "message": {
+                        "text": "The direct dependency hibernate-validator/5.2.4.Final has 1 vulnerabilities (max score 7.0)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 243
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "log4j",
+                    "message": {
+                        "text": "The direct dependency log4j/1.2.15 has 1 vulnerabilities (max score 9.4)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 184
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "junit",
+                    "message": {
+                        "text": "The direct dependency junit/4.7 has 1 vulnerabilities (max score 4.0)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "pom.xml"
+                                },
+                                "region": {
+                                    "startLine": 268
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                },
+                {
+                    "ruleId": "spring-core",
+                    "message": {
+                        "text": "The direct dependency spring-core/4.3.5.RELEASE has 1 vulnerabilities (max score 8.8)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": ""
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                }
+            ]
+        }
+    ]
+}
