@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   <name>Duck Hub Demo</name>
   <organization>
-		<name>Black Duck Software9</name>
+		<name>Black Duck Software6</name>
 		<url>http://www.blackducksoftware.com</url>
 	</organization>
 	
@@ -29,7 +29,7 @@
 		<dependency>
 		    <groupId>org.apache.neethi</groupId>
 		    <artifactId>neethi</artifactId>
-		    <version>3.0.3</version>
+		    <version>3.2.0</version>
 		</dependency>
 		
 		<dependency>
@@ -314,10 +314,8 @@
 						</goals>
 						<configuration>
 							<tasks>
-								<copy
-									todir="${project.build.directory}/${project.build.finalName}/src">
-									<fileset dir="${project.build.sourceDirectory}"
-										includes="**/*.java" />
+								<copy todir="${project.build.directory}/${project.build.finalName}/src">
+									<fileset dir="${project.build.sourceDirectory}" includes="**/*.java" />
 								</copy>
 							</tasks>
 						</configuration>
